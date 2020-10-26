@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        TIC_TAC_TOE_GAME
+    </title>
+    <link rel="stylesheet" href="Styling.css">
+    <script src="Javascripting.js"></script>
+
+
+</head>
+
+<body onload="startGame();">
+    <img src="Pictures\Heading.png" width="180" height="80">
+    <div class="title">Tic_Tac_Toe <br> Design by student 140111 <br> Lourens Van Der Bijl</div>
+    <div id="message" class="PlayerMessage">Player Messages will come here !!</div>
+
+    <div class="main">
+        <table class="table">
+            <tr>
+                <td id="s1" class="emty" onclick="nextMove(this);"></td>
+                <td id="s2" class="emty" onclick="nextMove(this);"></td>
+                <td id="s3" class="emty" onclick="nextMove(this);"></td>
+            </tr>
+
+            <tr>
+                <td id="s4" class="emty" onclick="nextMove(this);"></td>
+                <td id="s5" class="emty" onclick="nextMove(this);"></td>
+                <td id="s6" class="emty" onclick="nextMove(this);"></td>
+            </tr>
+
+            <tr>
+                <td id="s7" class="emty" onclick="nextMove(this);"></td>
+                <td id="s8" class="emty" onclick="nextMove(this);"></td>
+                <td id="s9" class="emty" onclick="nextMove(this);"></td>
+            </tr>
+
+        </table>
+    </div>
+    <input class="newGame" type="button" value="NEW GAME" onclick="document.location.reload(true)">
+</body>
+
+</html>
