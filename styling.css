@@ -4,34 +4,66 @@ body {
     background-color: black;
     text-align: center;
 }
-.title{
+
+.title {
     color: rgba(4, 150, 11, 0.753);
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: 900;
     font-size: 20px;
-
+    background-color: rgba(77, 77, 77, 0.527);
+    margin-top: 25px;
+    border-radius: 15px 15px;
 }
 
-.emty{
+.emty {
     width: 200px;
     height: 200px;
+    padding-top: 10px;
     border: 3px solid rgb(240, 240, 243);
     font-size: 80px;
     text-align: center;
     color: blue;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+    from {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+    }
+    to {
+        text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    }
+}
+
 
 }
-.emty:hover{
+.emty:hover {
     background-color: rgb(114, 114, 114)
 }
-   
 .PlayerMessage {
     text-align: center;
     color: rgb(99, 6, 45);
     font-weight: 900;
-    font-size: 200%;
+    font-size: 36px;
+    margin-top: 50px;
+    background-color: rgba(17, 198, 230, 0.815);
+    border: 2px solid blue;
+    border-radius: 20px 20px;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
 }
-
+@-webkit-keyframes glow {
+    from {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+    }
+    
+    to {
+        text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    }
+}
 button {
     width: 290px;
     height: 50px;
@@ -40,14 +72,31 @@ button {
     margin-top: 8px;
 }
 .newGame {
-    width: 250px;
-    height: 30px ;
-    margin-top: 8px;
+    width: 50%;
+    height: auto;
+    margin-top: 80px;
     font-weight: 900;
-    border: 3px solid blue;
+    border: 3px solid rgb(248, 248, 248);
+    color: white;
+    background-color: green;
+    font-size: 23px;
+    border-radius: 20px;
+}
+.exit {
+    width: 50%;
+    height: auto;
+    margin-top: 30px;
+    font-weight: 900;
+    border: 3px solid rgb(255, 255, 255);
+    color: white;
+    background-color: red;
+    font-size: 23px;
+    border-radius: 20px;
 }
 .main {
     width: 100%;
+    height: 100%;
+    margin-top: 15px;
 }
 .table {
     cursor: pointer;

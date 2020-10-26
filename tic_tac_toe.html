@@ -5,40 +5,64 @@
     <title>
         TIC_TAC_TOE_GAME
     </title>
-    <link rel="stylesheet" href="Styling.css">
+
     <script src="Javascripting.js"></script>
-
-
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="Styling.css">
 </head>
 
 <body onload="startGame();">
-    <img src="Pictures\Heading.png" width="180" height="80">
-    <div class="title">Tic_Tac_Toe <br> Design by student 140111 <br> Lourens Van Der Bijl</div>
-    <div id="message" class="PlayerMessage">Player Messages will come here !!</div>
+    <div class="container">
+        <div class="headings">
+            <div class="row">
+                <div class="col-sm-6">
+                    <img src="Pictures\Heading.png" width="180" height="80">
+                    <div class="title">
+                        Tic_Tac_Toe <br> Design by student: 140111 <br> Lourens Van Der Bijl
+                    </div>
 
-    <div class="main">
-        <table class="table">
-            <tr>
-                <td id="s1" class="emty" onclick="nextMove(this);"></td>
-                <td id="s2" class="emty" onclick="nextMove(this);"></td>
-                <td id="s3" class="emty" onclick="nextMove(this);"></td>
-            </tr>
 
-            <tr>
-                <td id="s4" class="emty" onclick="nextMove(this);"></td>
-                <td id="s5" class="emty" onclick="nextMove(this);"></td>
-                <td id="s6" class="emty" onclick="nextMove(this);"></td>
-            </tr>
+                    <div id="message" class="PlayerMessage">
+                        Player Messages will come here !!
+                    </div>
 
-            <tr>
-                <td id="s7" class="emty" onclick="nextMove(this);"></td>
-                <td id="s8" class="emty" onclick="nextMove(this);"></td>
-                <td id="s9" class="emty" onclick="nextMove(this);"></td>
-            </tr>
+                    <input class="newGame" type="button" value="New Game" onclick="document.location.reload(true)"><br>
+                    <input class="exit" type="button" value="Quit Game" onclick="exit()">
+                </div>
 
-        </table>
+                <div class="col-sm-6">
+                    <div class="main">
+                        <table class="table">
+                            <tr>
+                                <td id="s1" class="emty" onclick="nextMove(this);"></td>
+                                <td id="s2" class="emty" onclick="nextMove(this);"></td>
+                                <td id="s3" class="emty" onclick="nextMove(this);"></td>
+                            </tr>
+
+                            <tr>
+                                <td id="s4" class="emty" onclick="nextMove(this);"></td>
+                                <td id="s5" class="emty" onclick="nextMove(this);"></td>
+                                <td id="s6" class="emty" onclick="nextMove(this);"></td>
+                            </tr>
+
+                            <tr>
+                                <td id="s7" class="emty" onclick="nextMove(this);"></td>
+                                <td id="s8" class="emty" onclick="nextMove(this);"></td>
+                                <td id="s9" class="emty" onclick="nextMove(this);"></td>
+                            </tr>
+
+                        </table>
+                    </div>
+
+                </div>
+            </div>
+
+
+        </div>
+
     </div>
-    <input class="newGame" type="button" value="NEW GAME" onclick="document.location.reload(true)">
 </body>
 
 </html>
